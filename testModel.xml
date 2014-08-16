@@ -3,18 +3,18 @@
         <annotation>
             <listOfLayouts>
                 <layout id="GrapheneLayout">
-                    <dimensions width="727" height="862.5" />
+                    <dimensions width="497" height="137" />
                     <listOfSpeciesGlyphs>
                         <speciesGlyph id="sGlyph-S0" species="S0">
                             <boundingBox>
                                 <dimensions height="30" width="80" />
-                                <position x="193" y="93" />
+                                <position x="322" y="64" />
                             </boundingBox>
                         </speciesGlyph>
                         <speciesGlyph id="sGlyph-S1" species="S1">
                             <boundingBox>
                                 <dimensions height="30" width="80" />
-                                <position x="286" y="63" />
+                                <position x="497" y="137" />
                             </boundingBox>
                         </speciesGlyph>
                     </listOfSpeciesGlyphs>
@@ -22,13 +22,13 @@
                         <textGlyph id="tGlyph-S0" graphicalObject="sGlyph-S0" text="S0">
                             <boundingBox>
                                 <dimensions height="30" width="80" />
-                                <position x="193" y="93" />
+                                <position x="322" y="64" />
                             </boundingBox>
                         </textGlyph>
                         <textGlyph id="tGlyph-S1" graphicalObject="sGlyph-S1" text="S1">
                             <boundingBox>
                                 <dimensions height="30" width="80" />
-                                <position x="286" y="63" />
+                                <position x="497" y="137" />
                             </boundingBox>
                         </textGlyph>
                     </listOfTextGlyphs>
