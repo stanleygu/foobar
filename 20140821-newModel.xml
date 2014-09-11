@@ -1,1 +1,138 @@
-<sbml xmlns="http://www.sbml.org/sbml/level2" xmlns:jd2="http://www.sys-bio.org/sbml/jd2" level="2" version="1"><model id="untitled" name="untitled"><annotation><listOfLayouts><layout id="GrapheneLayout"><dimensions width="-Infinity" height="-Infinity"/><annotation><listOfRenderInformation xmlns="http://projects.eml.org/bcb/sbml/render/level2"><renderInformation id="Graphene-SBML"><listOfStyles><style/></listOfStyles><listOfGradientDefinitions><linearGradient/></listOfGradientDefinitions></renderInformation></listOfRenderInformation></annotation></layout></listOfLayouts></annotation><listOfCompartments><compartment id="compartment" size="1"/></listOfCompartments><listOfSpecies><species/></listOfSpecies><listOfReactions><reaction/></listOfReactions></model></sbml>
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by libAntimony version v2.5 on 2014-09-11 21:40 with libSBML version 5.10.0. -->
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="__main" name="__main">
+    <listOfCompartments>
+      <compartment sboTerm="SBO:0000410" id="default_compartment" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="P1" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P0" compartment="default_compartment" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P2" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="Vm" value="10" constant="true"/>
+      <parameter id="Kh" value="0.5" constant="true"/>
+      <parameter id="n" value="4" constant="true"/>
+      <parameter id="k1" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="_J0" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="P1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P0"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <ci> Vm </ci>
+              <apply>
+                <plus/>
+                <ci> Kh </ci>
+                <apply>
+                  <power/>
+                  <ci> P0 </ci>
+                  <ci> n </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J1" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="P1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k1 </ci>
+              <ci> P1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J2" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="P2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <ci> Vm </ci>
+              <apply>
+                <plus/>
+                <ci> Kh </ci>
+                <apply>
+                  <power/>
+                  <ci> P1 </ci>
+                  <ci> n </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J3" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="P2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k1 </ci>
+              <ci> P2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J4" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="P0" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <ci> Vm </ci>
+              <apply>
+                <plus/>
+                <ci> Kh </ci>
+                <apply>
+                  <power/>
+                  <ci> P2 </ci>
+                  <ci> n </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J5" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="P0" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k1 </ci>
+              <ci> P0 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
