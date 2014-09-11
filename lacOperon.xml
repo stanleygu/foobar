@@ -1,1 +1,150 @@
-<sbml xmlns="http://www.sbml.org/sbml/level2" xmlns:jd2="http://www.sys-bio.org/sbml/jd2" level="2" version="1"><model id="untitled" name="untitled"><annotation><listOfLayouts><layout id="GrapheneLayout"><dimensions width="-Infinity" height="-Infinity"/><annotation><listOfRenderInformation xmlns="http://projects.eml.org/bcb/sbml/render/level2"><renderInformation id="Graphene-SBML"><listOfStyles><style/></listOfStyles><listOfGradientDefinitions><linearGradient/></listOfGradientDefinitions></renderInformation></listOfRenderInformation></annotation></layout></listOfLayouts></annotation><listOfCompartments><compartment id="compartment" size="1"/></listOfCompartments></model></sbml>
+<sbml
+    xmlns="http://www.sbml.org/sbml/level2"
+    xmlns:jd2="http://www.sys-bio.org/sbml/jd2" level="2" version="1">
+    <model id="untitled" name="untitled">
+        <annotation>
+            <listOfLayouts>
+                <layout id="GrapheneLayout">
+                    <dimensions width="429.6592009085079" height="391.8756148553141"/>
+                    <annotation>
+                        <listOfRenderInformation
+                            xmlns="http://projects.eml.org/bcb/sbml/render/level2">
+                            <renderInformation id="Graphene-SBML">
+                                <listOfStyles>
+                                    <style idList="sGlyph-S0">
+                                        <g>
+                                            <rectangle fill="gradient-S0" height="33.239852413583435" width="80" stroke="#ffb800" stroke-width="3"/>
+                                        </g>
+                                    </style>
+                                    <style idList="tGlyph-S0">
+                                        <g font-family="Georgia" font-size="10" stroke="black" text-anchor="middle" vtext-anchor="top"/>
+                                    </style>
+                                    <style idList="sGlyph-S1">
+                                        <g>
+                                            <rectangle fill="gradient-S1" height="30.780245480173676" width="80" stroke="#FFB800" stroke-width="3"/>
+                                        </g>
+                                    </style>
+                                    <style idList="tGlyph-S1">
+                                        <g font-family="Georgia" font-size="10" stroke="black" text-anchor="middle" vtext-anchor="top"/>
+                                    </style>
+                                    <style idList="sGlyph-S2">
+                                        <g>
+                                            <rectangle fill="gradient-S2" height="30" width="80" stroke="#FFB800" stroke-width="3"/>
+                                        </g>
+                                    </style>
+                                    <style idList="tGlyph-S2">
+                                        <g font-family="Georgia" font-size="10" stroke="black" text-anchor="middle" vtext-anchor="top"/>
+                                    </style>
+                                </listOfStyles>
+                                <listOfGradientDefinitions>
+                                    <linearGradient id="gradient-S0">
+                                        <stop offset="0%" stop-color="#FFDC9E"/>
+                                        <stop offset="100%" stop-color="#FFF"/>
+                                    </linearGradient>
+                                    <linearGradient id="gradient-S1">
+                                        <stop offset="0%" stop-color="#ffdc9e"/>
+                                        <stop offset="100%" stop-color="#FFF"/>
+                                    </linearGradient>
+                                    <linearGradient id="gradient-S2">
+                                        <stop offset="0%" stop-color="#FFDC9E"/>
+                                        <stop offset="100%" stop-color="#FFF"/>
+                                    </linearGradient>
+                                </listOfGradientDefinitions>
+                            </renderInformation>
+                        </listOfRenderInformation>
+                    </annotation>
+                    <listOfSpeciesGlyphs>
+                        <speciesGlyph id="sGlyph-S0" species="lactose">
+                            <boundingBox>
+                                <dimensions height="33.239852413583435" width="80"/>
+                                <position x="280.8487382926662" y="335.1613229420734"/>
+                            </boundingBox>
+                        </speciesGlyph>
+                        <speciesGlyph id="sGlyph-S1" species="galactose">
+                            <boundingBox>
+                                <dimensions height="30.780245480173676" width="80"/>
+                                <position x="429.6592009085079" y="275.0784455916195"/>
+                            </boundingBox>
+                        </speciesGlyph>
+                        <speciesGlyph id="sGlyph-S2" species="glucose">
+                            <boundingBox>
+                                <dimensions height="30" width="80"/>
+                                <position x="429.3753371217314" y="391.8756148553141"/>
+                            </boundingBox>
+                        </speciesGlyph>
+                    </listOfSpeciesGlyphs>
+                    <listOfReactionGlyphs>
+                        <reactionGlyph id="rGlyph-R0" reaction="R0">
+                            <boundingBox>
+                                <dimensions height="0" width="0"/>
+                                <position x="379.9610921076351" y="334.03846112966903"/>
+                            </boundingBox>
+                            <listOfSpeciesReferenceGlyphs>
+                                <speciesReferenceGlyph
+                                    xmlns:render="http://projects.eml.org/bcb/sbml/render/level2" id="sReference-R0-S0-0" role="substrate" speciesGlyph="sGlyph-S0" speciesReference="lactose">
+                                    <boundingBox>
+                                        <position x="0" y="0"/>
+                                        <dimensions width="0" height="0"/>
+                                    </boundingBox>
+                                </speciesReferenceGlyph>
+                                <speciesReferenceGlyph
+                                    xmlns:render="http://projects.eml.org/bcb/sbml/render/level2" id="sReference-R0-S1-0" role="product" speciesGlyph="sGlyph-S1" speciesReference="galactose">
+                                    <boundingBox>
+                                        <position x="0" y="0"/>
+                                        <dimensions width="0" height="0"/>
+                                    </boundingBox>
+                                </speciesReferenceGlyph>
+                                <speciesReferenceGlyph
+                                    xmlns:render="http://projects.eml.org/bcb/sbml/render/level2" id="sReference-R0-S2-1" role="product" speciesGlyph="sGlyph-S2" speciesReference="glucose">
+                                    <boundingBox>
+                                        <position x="0" y="0"/>
+                                        <dimensions width="0" height="0"/>
+                                    </boundingBox>
+                                </speciesReferenceGlyph>
+                            </listOfSpeciesReferenceGlyphs>
+                        </reactionGlyph>
+                    </listOfReactionGlyphs>
+                    <listOfTextGlyphs>
+                        <textGlyph id="tGlyph-S0" graphicalObject="sGlyph-S0" text="lactose">
+                            <boundingBox>
+                                <dimensions height="33.239852413583435" width="80"/>
+                                <position x="280.8487382926662" y="335.1613229420734"/>
+                            </boundingBox>
+                        </textGlyph>
+                        <textGlyph id="tGlyph-S1" graphicalObject="sGlyph-S1" text="galactose">
+                            <boundingBox>
+                                <dimensions height="30.780245480173676" width="80"/>
+                                <position x="429.6592009085079" y="275.0784455916195"/>
+                            </boundingBox>
+                        </textGlyph>
+                        <textGlyph id="tGlyph-S2" graphicalObject="sGlyph-S2" text="glucose">
+                            <boundingBox>
+                                <dimensions height="30" width="80"/>
+                                <position x="429.3753371217314" y="391.8756148553141"/>
+                            </boundingBox>
+                        </textGlyph>
+                    </listOfTextGlyphs>
+                </layout>
+            </listOfLayouts>
+        </annotation>
+        <listOfCompartments>
+            <compartment id="compartment" size="1"/>
+        </listOfCompartments>
+        <listOfSpecies>
+            <species id="lactose" boundaryCondition="false" initialConcentration="0" compartment="compartment"/>
+            <species id="galactose" boundaryCondition="false" initialConcentration="0" compartment="compartment"/>
+            <species id="glucose" boundaryCondition="false" initialConcentration="0" compartment="compartment"/>
+        </listOfSpecies>
+        <listOfReactions>
+            <reaction id="R0" reversible="false">
+                <listOfReactants>
+                    <speciesReference species="S0" stoichiometry="1"/>
+                </listOfReactants>
+                <listOfProducts>
+                    <speciesReference species="S1" stoichiometry="1"/>
+                    <speciesReference species="S2" stoichiometry="1"/>
+                </listOfProducts>
+            </reaction>
+        </listOfReactions>
+    </model>
+</sbml>
