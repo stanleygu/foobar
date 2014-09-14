@@ -57,7 +57,7 @@
                         <speciesGlyph id="sGlyph-S0" species="S0">
                             <boundingBox>
                                 <dimensions height="30" width="80"/>
-                                <position x="308" y="69"/>
+                                <position x="439" y="84"/>
                             </boundingBox>
                         </speciesGlyph>
                         <speciesGlyph id="sGlyph-S1" species="S1">
@@ -77,7 +77,7 @@
                         <reactionGlyph id="rGlyph-R0" reaction="R0">
                             <boundingBox>
                                 <dimensions height="0" width="0"/>
-                                <position x="344" y="133"/>
+                                <position x="409.5" y="140.5"/>
                             </boundingBox>
                             <listOfSpeciesReferenceGlyphs>
                                 <speciesReferenceGlyph
@@ -99,7 +99,7 @@
                         <reactionGlyph id="rGlyph-R1" reaction="R1">
                             <boundingBox>
                                 <dimensions height="0" width="0"/>
-                                <position x="483" y="73.5"/>
+                                <position x="548.5" y="81"/>
                             </boundingBox>
                             <listOfSpeciesReferenceGlyphs>
                                 <speciesReferenceGlyph
@@ -123,7 +123,7 @@
                         <textGlyph id="tGlyph-S0" graphicalObject="sGlyph-S0" text="S0">
                             <boundingBox>
                                 <dimensions height="30" width="80"/>
-                                <position x="308" y="69"/>
+                                <position x="439" y="84"/>
                             </boundingBox>
                         </textGlyph>
                         <textGlyph id="tGlyph-S1" graphicalObject="sGlyph-S1" text="S1">
