@@ -1,0 +1,22 @@
+# Revoke a task
+tasks.app.control.revoke(id, terminate=True) 
+
+# remove all tasks
+tasks.app.control.discard_all() 
+
+
+# make a bunch of sleep tasks
+t = [tasks.sleep.delay(600) for i in range(6)] 
+
+# show queued up tasks
+tasks.app.backend.client.llen('celery')
+
+# inspection object
+i = tasks.app.control.inspect()
+
+# list number of active and reserved tasks for a single worker
+len(i.active()[u'celery@06d7367994a2'])
+len(i.reserved()[u'celery@06d7367994a2'])
+
+# set hard limit on a task
+tasks.app.control.time_limit(u'tasks.sleep', soft=60, hard=120, reply=True)
